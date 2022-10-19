@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-bottom: #000000 solid 1px;
+    background-color: #004999;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#nav li {
+    float: left;
+    height: 100%;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    height: 100%;
+    border-right: #000000 solid 1px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#content {
+    width: 80%;
+    font-size: 18px;
+}
+
+h1 {
+    border-bottom: #004999 solid 3px;
+    display: inline-block;
+}
+
+#today {
+    display: flex;
+    flex-direction: column;
+}
+
+#now {
+    background-color: #29b6f6;
+    border-radius: 30px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.temp {
+    font-size: 50px;
+}
+
+.info {
+    margin-right: 25px;
+}
+
+#weekTable, #dayTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#weekTable tr, #dayTable tr {
+    border-bottom: #dddddd solid 1px;
+}
+
+#weekTable th, #dayTable th {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#weekTable td, #dayTable td {
+    text-align: center;
+    padding: 15px;
+}

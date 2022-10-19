@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Været nå</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="index.html">Nå</a></li>
+                <li><a href="nextWeek.html">Neste syv dager</a></li>
+                <li><a href="nextWeekTemp.html">Temperatur neste syv dager</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Nå</h1>
+            <div id="now"></div>
+            
+            <h1>Hele dagen</h1>
+            <table id="dayTable">
+                <tr>
+                    <th>Klokkeslett</th>
+                    <th>Temperatur</th>
+                    <th>Vind hastighet</th>
+                    <th>Nedbør</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/script.js" onload="displayWeatherNow()"></script>
+</body>
+</html>

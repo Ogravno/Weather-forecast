@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vær neste syv dager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+        <div id="container">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="index.html">Nå</a></li>
+                <li><a href="nextWeek.html">Neste syv dager</a></li>
+                <li><a href="nextWeekTemp.html">Temperatur neste syv dager</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Værmelding for de neste 7 dagene</h1>
+
+            <div id="week">
+                <table id="weekTable">
+                    <tr>
+                        <th>Dag</th>
+                        <th>Temperatur</th>
+                        <th>Vind hastighet</th>
+                        <th>Nedbør</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js" onload="displayWeatherNextSevenDays()"></script>
+</body>
+</html>
